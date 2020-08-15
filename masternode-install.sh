@@ -422,7 +422,6 @@ chmod +x /root/jackpot-masternode-stats
 cp /root/.bashrc /root/.bashrc.backup
 sed '/feestats/d' /root/.bashrc | sed '/networkstats/d' | sed '/mnstats/d' | sed '/jackpotinfo/d' > /root/tmp
 mv /root/tmp /root/.bashrc
-echo -e "alias sapinfo='/root/jackpot-general-info'" >> /root/.bashrc
 echo -e "alias feestats='/root/jackpot-fee-info'" >> /root/.bashrc
 echo -e "alias networkstats='/root/jackpot-networkinfo'" >> /root/.bashrc
 echo -e "alias mnstats='/root/jackpot-masternode-stats'" >> /root/.bashrc
@@ -444,7 +443,7 @@ function important_information() {
  echo -e "Use ${RED}$COIN_CLI getmasternodestatus${NC} to check your MN Status."
  echo -e "Use ${RED}$COIN_CLI mnsync status${NC} to see if the node is synced with the network."
  echo -e "Use ${RED}$COIN_CLI help${NC} for help."
- echo -e "You can also use ${RED}sapinfo${NC}, ${RED}feestats${NC}, ${RED}networkstats${NC} and ${RED}mnstats${NC} commands for a nice looking infos.${NC}"
+ echo -e "You can also use ${RED}jackpot-cli getinfo${NC}, ${RED}jackpot-cli getblockcount${NC}, ${RED}jackpot-cli getmasternodewinners${NC} and ${RED}jackpot-cli getblockchaininfo${NC} commands for a nice looking infos.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
 # if [[ -n $SENTINEL_REPO  ]]; then
 #  echo -e "${RED}Sentinel${NC} is installed in ${RED}/root/sentinel_$COIN_NAME${NC}"
