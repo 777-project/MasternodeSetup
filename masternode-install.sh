@@ -383,7 +383,7 @@ clear
 }
 
 function set_scripts_and_aliases() {
-cat << EOF > /root/sap-general-info
+cat << EOF > /root/jackpot-general-info
 echo -e "\n\n${BLUE}=======================================================================================================${NC}\n"
 echo -e "${GREEN}$PROJECT_NAME General Info: ${NC}"
 $COIN_CLI getinfo
