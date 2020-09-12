@@ -1,10 +1,15 @@
 # MasternodeSetup
 777 Jackpot masternode setup
+
+<img src="https://i.imgur.com/Pk0Z7Nb.jpg"  alt="SPECIFICATIONS">
+
 ### Required:
 
 1. Jackpot 777 for Collateral <br>
 (You can buy 777 from exchange for collateral) <br>
 ***•https://dex.heliobank.net/market/BIRAKE.777_BIRAKE.BTC <br>***
+
+<img src="https://i.imgur.com/eViLuGM.jpg"  alt="reward-table">
 
 2. Download Local Wallet for your operating system: : https://github.com/777-project/777/releases/
 
