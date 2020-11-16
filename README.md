@@ -22,7 +22,7 @@
 
 To install Jackpot(777) Masternode use the following command:
 
-`bash <( curl -sL https://raw.githubusercontent.com/777-project/MasternodeSetup/master/masternode-install.sh`)
+`bash <( curl -sL https://raw.githubusercontent.com/777-project/MasternodeSetup/master/masternode-install.sh)`
 
 - Enjoy
 
