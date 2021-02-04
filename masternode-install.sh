@@ -8,7 +8,7 @@ COIN_CLI='jackpot-cli'
 COIN_TX='jackpot-tx'
 COIN_PATH='/usr/local/bin/'
 OS_VERSION=$(lsb_release -d)
-COIN_TGZP='https://github.com/777-project/777/releases/download/v2.0.1.0/jackpot-2.0.1.0-linux.zip'
+COIN_TGZP='https://github.com/777-project/777/releases/download/v3.0.0.0/Jackpot-3.0.0.0-Linux.zip'
 COIN_BOOTSTRAP='https://github.com/777-project/777/releases/download/v2.0.1.0/bootstrap.zip'
 COIN_BOOTSTRAP_NAME=$(echo $COIN_BOOTSTRAP | awk -F'/' '{print $NF}')
 COIN_TGZ=$(echo $COIN_TGZP | awk -F'/' '{print $NF}')
@@ -161,10 +161,10 @@ EOF
 function create_config() {
   echo -e "${YELLOW}Downloading and extracting bootstrap${NC}"
   mkdir $CONFIGFOLDER >/dev/null 2>&1
-  cd $CONFIGFOLDER >/dev/null 2>&1
-  wget $COIN_BOOTSTRAP >/dev/null 2>&1
-  unzip $COIN_BOOTSTRAP_NAME >/dev/null 2>&1
-  rm -r $COIN_BOOTSTRAP_NAME >/dev/null 2>&1
+  #cd $CONFIGFOLDER >/dev/null 2>&1
+  #wget $COIN_BOOTSTRAP >/dev/null 2>&1
+  #unzip $COIN_BOOTSTRAP_NAME >/dev/null 2>&1
+  #rm -r $COIN_BOOTSTRAP_NAME >/dev/null 2>&1
   cd ~
   RPCUSER=$(tr -cd '[:alnum:]' < /dev/urandom | fold -w10 | head -n1)
   RPCPASSWORD=$(tr -cd '[:alnum:]' < /dev/urandom | fold -w22 | head -n1)
